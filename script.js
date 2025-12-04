@@ -79,15 +79,25 @@ de Kerstman 🎅✨`
         },
         {
             day: 9,
-            name: "De Toekomst van &samhoud",
+            name: "Syl de salesvoorbereider",
             interactive: true,
-            desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            image: "images/Syl.png",
+            desc: `Syl heeft één missie: ervoor zorgen dat jij nooit meer onvoorbereid een salesgesprek ingaat.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+Dit is een Super Prompt voor de Copilot Research Agent. Je stopt er een bedrijfsnaam en gesprekspartner in, Syl geeft je een compleet dossier: strategie, financiële analyse, externe en interne uitdagingen, sales kansen voor &samhoud én slimme gespreksvragen voor je gesprekspartner.
+
+Resultaat? Je maakt indruk. Echte indruk. Want voorbereiding = halve werk. En betere voorbereiding = meer deals.
+
+Aan de slag? Check de Sales Super Prompt op SharePoint: <a href="https://samhoud1.sharepoint.com/sites/DATATOOLS-PORTAL/SitePages/Sales-Super-Prompt.aspx?Mode=Edit" target="_blank" style="color: var(--helio-cosmos); font-weight: bold; text-decoration: underline;">Sales Super Prompt</a>
+
+Maar eerst: wil je weten hoe de toekomst van &samhoud eruitziet met én zonder Syl?`,
             flipCards: {
                 withoutAi: 'images/day9_future_ai.jpg',
-                withAi: 'images/day9_future_no_ai.jpg'
-            }
+                withAi: 'images/day9_future_no_ai.jpg',
+                labelWithout: 'Toekomst zonder Syl',
+                labelWith: 'Toekomst met Syl'
+            },
+            closingText: "Jouw keuze. Welke &samhoud kies jij?"
         },
         {
             day: 10,
@@ -399,19 +409,35 @@ Ho ho hóó, wat een feest! 🎅✨`,
     function openModal(char) {
         charNameEl.textContent = char.name;
         charDayEl.textContent = char.day;
-        charDescEl.textContent = char.desc;
+
+        // Handle HTML in description (for links)
+        if (char.desc.includes('<a')) {
+            charDescEl.innerHTML = char.desc;
+        } else {
+            charDescEl.textContent = char.desc;
+        }
 
         const carouselContainer = document.getElementById('carousel-container');
         const carouselSlides = document.getElementById('carousel-slides');
         const carouselDots = document.getElementById('carousel-dots');
         const formsContainer = document.getElementById('forms-container');
         const flipCardsContainer = document.getElementById('flip-cards-container');
+        const imageContainer = document.getElementById('image-container');
+        const closingTextContainer = document.getElementById('closing-text-container');
 
         if (carouselContainer) carouselContainer.style.display = 'none';
         if (formsContainer) formsContainer.style.display = 'none';
         if (complimentContainer) complimentContainer.style.display = 'none';
         if (flipCardsContainer) flipCardsContainer.style.display = 'none';
+        if (imageContainer) imageContainer.style.display = 'none';
+        if (closingTextContainer) closingTextContainer.style.display = 'none';
         if (complimentText) complimentText.textContent = '';
+
+        // Display single image if present
+        if (char.image && imageContainer) {
+            imageContainer.style.display = 'block';
+            imageContainer.innerHTML = `<img src="${char.image}" alt="${char.name}" class="character-image">`;
+        }
 
         if (char.images && char.images.length > 0 && carouselContainer) {
             carouselContainer.style.display = 'block';
@@ -446,8 +472,25 @@ Ho ho hóó, wat een feest! 🎅✨`,
             flipCardsContainer.style.display = 'flex';
             const flipImgNoAi = document.getElementById('flip-img-no-ai');
             const flipImgAi = document.getElementById('flip-img-ai');
+            const flipLabelWithout = document.querySelector('.flip-card-front h3:first-of-type');
+            const flipLabelWith = document.querySelectorAll('.flip-card-front h3')[1];
+
             if (flipImgNoAi) flipImgNoAi.src = char.flipCards.withoutAi;
             if (flipImgAi) flipImgAi.src = char.flipCards.withAi;
+
+            // Update flip card labels if custom labels provided
+            if (char.flipCards.labelWithout && flipLabelWithout) {
+                flipLabelWithout.textContent = char.flipCards.labelWithout;
+            }
+            if (char.flipCards.labelWith && flipLabelWith) {
+                flipLabelWith.textContent = char.flipCards.labelWith;
+            }
+        }
+
+        // Display closing text if present
+        if (char.closingText && closingTextContainer) {
+            closingTextContainer.style.display = 'block';
+            closingTextContainer.textContent = char.closingText;
         }
 
         const videoContainer = document.getElementById('video-container');
@@ -520,12 +563,12 @@ Ho ho hóó, wat een feest! 🎅✨`,
                 return;
             }
 
-            // Don't interfere if modal is open
-            if (modal && !modal.classList.contains('hidden')) {
-                return;
-            }
-
             e.preventDefault();
+
+            // If modal is open, close it first
+            if (modal && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+            }
 
             // Move to next day
             currentDayIndex++;

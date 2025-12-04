@@ -38,3 +38,29 @@
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* IMAGE STYLES */
+.image-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.character-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* CLOSING TEXT STYLES */
+.closing-text-container {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.5rem;
+    color: var(--helio-cosmos);
+    text-align: center;
+    font-weight: 600;
+}
