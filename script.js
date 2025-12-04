@@ -295,12 +295,15 @@ Ho ho hóó, wat een feest! 🎅✨`,
                     // Find star character data (usually index 0 or find by type)
                     const starChar = characters.find(c => c.type === 'star');
                     if (starChar) {
-                        let sleighHasFlown = false;
                         box.addEventListener('click', () => {
                             const sleighImg = document.getElementById('sleigh-img');
-                            if (sleighImg && !sleighHasFlown) {
+                            if (sleighImg) {
+                                // Remove animation class to reset
+                                sleighImg.classList.remove('sleigh-animate');
+                                // Force reflow to restart animation
+                                void sleighImg.offsetWidth;
+                                // Add animation class again
                                 sleighImg.classList.add('sleigh-animate');
-                                sleighHasFlown = true;
                             }
                         });
                     }
