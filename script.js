@@ -82,15 +82,22 @@ de Kerstman 🎅✨`
             name: "Syl de salesvoorbereider",
             interactive: true,
             image: "images/Syl.png",
-            desc: `Syl heeft één missie: ervoor zorgen dat jij nooit meer onvoorbereid een salesgesprek ingaat.
+            desc: `<b>Syl heeft één missie:</b> ervoor zorgen dat jij nooit meer onvoorbereid een salesgesprek ingaat.
 
-Dit is een Super Prompt voor de Copilot Research Agent. Je stopt er een bedrijfsnaam en gesprekspartner in, Syl geeft je een compleet dossier: strategie, financiële analyse, externe en interne uitdagingen, sales kansen voor &samhoud én slimme gespreksvragen voor je gesprekspartner.
+Dit is een <b>Super Prompt</b> voor de Copilot Research Agent. Je stopt er een bedrijfsnaam en gesprekspartner in, Syl geeft je een compleet dossier:
+<ul>
+<li><i>Strategie</i></li>
+<li><i>Financiële analyse</i></li>
+<li><i>Externe en interne uitdagingen</i></li>
+<li><i>Sales kansen voor &samhoud</i></li>
+<li><i>Slimme gespreksvragen voor je gesprekspartner</i></li>
+</ul>
 
-Resultaat? Je maakt indruk. Echte indruk. Want voorbereiding = halve werk. En betere voorbereiding = meer deals.
+<b>Resultaat?</b> Je maakt indruk. Echte indruk. Want voorbereiding = halve werk. En betere voorbereiding = meer deals.
 
 Aan de slag? Check de Sales Super Prompt op SharePoint: <a href="https://samhoud1.sharepoint.com/sites/DATATOOLS-PORTAL/SitePages/Sales-Super-Prompt.aspx?Mode=Edit" target="_blank" style="color: var(--helio-cosmos); font-weight: bold; text-decoration: underline;">Sales Super Prompt</a>
 
-Maar eerst: wil je weten hoe de toekomst van &samhoud eruitziet met én zonder Syl?`,
+<i>Maar eerst: wil je weten hoe de toekomst van &samhoud eruitziet met én zonder Syl?</i>`,
             flipCards: {
                 withoutAi: 'images/day9_future_ai.jpg',
                 withAi: 'images/day9_future_no_ai.jpg',
@@ -104,27 +111,35 @@ Maar eerst: wil je weten hoe de toekomst van &samhoud eruitziet met én zonder S
             name: "Identiteitscrisis!",
             interactive: true,
             image: "images/Interview.png",
-            desc: `Help deze agent uit haar identiteitscrisis!
+            desc: `<b>Help deze agent uit haar identiteitscrisis!</b>
 Een jaar in ontwikkeling. Sinds oktober live. En ze is een machine.
-10 interviews analyseren? Makkelijk. 20? No sweat. 30, 40? The more the merrier! Terwijl jij na 3 interviews al niet meer weet wie wat zei, is zij net lekker warm gedraaid.
+10 interviews analyseren? <i>Makkelijk.</i> 20? <i>No sweat.</i> 30, 40? <i>The more the merrier!</i> Terwijl jij na 3 interviews al niet meer weet wie wat zei, is zij net lekker warm gedraaid.
 
-Haar superkracht?
-Structuur in chaos. Altijd. Ze blijft consistent, ook als jij allang de weg kwijt bent. Vaste Minto-structuur: hoofdconclusies, argumenten, quotes. Plus: ze behoudt de tone of voice van de klant. Zodat je quotes herkenbaar blijven. Authentiek. Bruikbaar.
+<b>Haar superkracht?</b>
+Structuur in chaos. Altijd. Ze blijft consistent, ook als jij allang de weg kwijt bent. Vaste Minto-structuur:
+<ul>
+<li>Hoofdconclusies</li>
+<li>Argumenten</li>
+<li>Quotes</li>
+</ul>
+Plus: ze behoudt de <i>tone of voice</i> van de klant. Zodat je quotes herkenbaar blijven. Authentiek. Bruikbaar.
 
-Klinkt goed? Is het ook.
+<b>Klinkt goed? Is het ook.</b>
 En nu heeft ze eindelijk een gezicht. Maar haar naam?
 
-Intana...
+<i>Intana...</i>
 
 Zeker bedacht door een developer zonder fantasie? Klinkt als een crypto coin die na twee weken crasht. Niet bepaald een naam die past bij de &samhoud familie, toch?
 
 Ze verdient beter. Een naam die matcht met haar skills én haar nieuwe look.
 
-Help haar:
-Inge de Interviewontleder
-Indy de Inzichtmaker
-Of jouw eigen geniale creatie?
-Winnende naam krijgt een flesje bubbels én een plekje op SharePoint.`,
+<b>Help haar:</b>
+<ul>
+<li>Inge de Interviewontleder</li>
+<li>Indy de Inzichtmaker</li>
+<li>Of jouw eigen geniale creatie?</li>
+</ul>
+<i>Winnende naam krijgt een flesje bubbels én een plekje op SharePoint.</i>`,
             forms: true,
             closingText: `Ga snel naar SharePoint om haar nog beter te leren kennen: <a href="https://samhoud1.sharepoint.com/sites/DATATOOLS-PORTAL/SitePages/Intana---Interview-Analyser.aspx" target="_blank" style="color: var(--helio-cosmos); font-weight: bold; text-decoration: underline;">Intana - Interview Analyser</a>`
         },
@@ -134,15 +149,15 @@ Winnende naam krijgt een flesje bubbels én een plekje op SharePoint.`,
             interactive: true,
             image: "images/Fenna.png",
             desc: `Ho ho ho, het is weer die tijd van het jaar.
-Nee, niet Kerst. Endyears.
+Nee, niet Kerst. <b>Endyears.</b>
 
 En jij hebt vast nog een inbox vol feedbackverzoeken die je vóór 12 december moet schrijven.
 Voor sommigen is het heerlijk - eindelijk al die opgekropte feedback eruit gooien. Voor anderen is het een nachtmerrie. Je wilt eerlijk zijn, maar niet hard. Constructief, maar niet vaag. Motiverend, maar niet fake. En dat ook nog eens in de drukste tijd van het jaar.
 
-Gelukkig bestaat er nu Fenna.
+<b>Gelukkig bestaat er nu Fenna.</b>
 Fenna de Feedbackfixer maakt een eind aan alle stress. Ze helpt je om feedback netjes op papier te krijgen én traint je ondertussen in het geven van sterkere feedback.
 
-Wil je alvast een voorproefje van Fenna's skills? Klik op de knop en krijg een compliment - voor jezelf, of als inspiratie voor de feedback die je gaat schrijven.`,
+<i>Wil je alvast een voorproefje van Fenna's skills? Klik op de knop en krijg een compliment - voor jezelf, of als inspiratie voor de feedback die je gaat schrijven.</i>`,
             compliments: true
         },
         { day: 12, name: "12 December", desc: "Coming soon...", interactive: true },
@@ -432,11 +447,8 @@ Ho ho hóó, wat een feest! 🎅✨`,
         charDayEl.textContent = char.day;
 
         // Handle HTML in description (for links)
-        if (char.desc.includes('<a')) {
-            charDescEl.innerHTML = char.desc;
-        } else {
-            charDescEl.textContent = char.desc;
-        }
+        // Always use innerHTML to support formatting tags like <b>, <i>, <ul>
+        charDescEl.innerHTML = char.desc;
 
         const carouselContainer = document.getElementById('carousel-container');
         const carouselSlides = document.getElementById('carousel-slides');

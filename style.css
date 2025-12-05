@@ -1062,3 +1062,27 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Character Description Formatting */
+#char-desc {
+    line-height: 1.5;
+}
+
+#char-desc p {
+    margin: 0.3rem 0;
+}
+
+#char-desc ul {
+    margin: 0.3rem 0 0.3rem 1.5rem;
+    list-style-type: disc;
+}
+
+#char-desc li {
+    margin-bottom: 0.1rem;
+    padding-left: 0.3rem;
+    line-height: 1.4;
+}
+
+#char-desc b {
+    color: var(--helio-cosmos);
+}
